@@ -1,0 +1,3 @@
+[console_scripts]
+c2f = temperature:_c2f_cli
+f2c = temperature:_f2c_cli

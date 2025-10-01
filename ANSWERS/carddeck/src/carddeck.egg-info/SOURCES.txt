@@ -1,0 +1,11 @@
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+src/card.py
+src/carddeck.py
+src/carddeck.egg-info/PKG-INFO
+src/carddeck.egg-info/SOURCES.txt
+src/carddeck.egg-info/dependency_links.txt
+src/carddeck.egg-info/top_level.txt
+tests/test_carddeck.py
