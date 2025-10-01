@@ -1,0 +1,5 @@
+ERROR      EXPERIMENT message 1
+ERROR      EXPERIMENT message 1
+ERROR      EXPERIMENT message 1
+WARNING    EXPERIMENT this is a warning
+CRITICAL   EXPERIMENT Oh no!!
