@@ -1,12 +1,15 @@
 import logging
 
+logger = logging.getLogger(__name__)
+
+
 logging.basicConfig( # configure logging
     filename='../LOGS/exception.log',
     level=logging.WARNING,  # minimum level
 )
 
 for i in range(3):
-    try:
+    try:˙
         result = i/0
     except ZeroDivisionError:
         logging.exception('Logging with exception info') # add exception info to the log

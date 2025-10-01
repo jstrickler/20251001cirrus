@@ -1,5 +1,5 @@
 
-a: str
+a: str = "abc"
 a = "abc"
 a = 123
 a = 123.456
