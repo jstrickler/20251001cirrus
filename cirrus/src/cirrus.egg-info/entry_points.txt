@@ -1,0 +1,2 @@
+[console_scripts]
+script = cirrus:_cli_script
