@@ -1,9 +1,4 @@
 import pytest
-from .silly import Silly
-    
-@pytest.fixture
-def silly_object():
-    return Silly()  # fixture returns instance of Silly
 
 # List of values for testing containing input and expected result
 test_data = [

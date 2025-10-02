@@ -8,6 +8,10 @@ voluptate velit esse cillum dolore U901 eu fugiat nulla pariatur.
 Excepteur sint occaecat A-110 cupidatat non proident, sunt in H-332 culpa qui 
 officia deserunt Y-45 mollit anim id est laborum"""
 
+
+# group 0   [               ]
+# group 1    [   ]
+# group 2            [      ]
 pattern = r'([A-Z])-(\d{2,3})'  # parens delimit groups
 
 print("Group 0            Group 1              Group 2")
@@ -15,12 +19,16 @@ header2 = "text  start  end   text  start  end     text  start  end"
 print(header2)
 print("-" * len(header2))
 
+#   color/(?:blue|red)
+
 for m in re.finditer(pattern, s):
     print(
         f"{m.group(0):5s}  {m.start(0):3d}  {m.end(0):3d}"
         f"    {m.group(1):5s}  {m.start(1):3d}  {m.end(1):3d}"
         f"      {m.group(2):5s}  {m.start(2):3d}  {m.end(2):3d}"
     )
+    print(f"{m.groups() = }")
+    
 print()
 
 matches = re.findall(pattern, s)  # findall() returns list of tuples containing groups

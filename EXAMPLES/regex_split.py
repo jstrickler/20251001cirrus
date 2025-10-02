@@ -15,5 +15,5 @@ rx_wordsep = re.compile(r"[^a-z0-9-]+", re.I)  # When splitting, pattern matches
 words = rx_wordsep.split(s)  # Retrieve text _separated_ by your pattern
 unique_words = set(words)
 
-print(sorted(unique_words))
+print(sorted(unique_words, key=str.lower))
 
